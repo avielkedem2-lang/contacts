@@ -4,6 +4,7 @@ def menu():
     print("=== menu ===")
     print("for add contacts press 1")
     print("to view contacts press 2")
+    print("for search contact press 3")
     print("for exit press 0")
     return input("choose ")
 
@@ -25,6 +26,12 @@ while True:
 
     if choice == "2":
         show_contacts("contacts.txt")
+
+
+    if choice == "3":
+        x = input("Enter a name to search for ")
+        print(search_contacts(x))
+
 
 
     else:
