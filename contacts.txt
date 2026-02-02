@@ -1,3 +1,2 @@
-name: avi, phone number: 435312
 name: Yossi, phone number: 769875
 name: devid, phone number: 5634654
