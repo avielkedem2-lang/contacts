@@ -9,3 +9,11 @@ def add_contacts(name, phone_number):
     except Exception as error:
         print(error)
 
+
+def show_contacts(fils_txt):
+    try:
+        with open(fils_txt) as f:
+            print(f.read())
+    except Exception as fild:
+        print(fild)
+
