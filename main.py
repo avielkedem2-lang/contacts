@@ -14,10 +14,18 @@ while True:
     if choice == "0":
         print("closing")
         break
+
+
     if choice == "1":
         name = input("Enter a mame ")
         phone = input("Enter a phone number ")
         a1 = AddContacts(name, phone)
         add_contacts(name, phone)
+
+
+    if choice == "2":
+        show_contacts("contacts.txt")
+
+
     else:
         print("your choice not legal")
