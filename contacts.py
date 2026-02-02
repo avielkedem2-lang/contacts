@@ -47,3 +47,19 @@ def deleting_contact(name):
 
     except Exception as fild:
         print(fild)
+
+
+def number_update(name, new_number):
+    try:
+        new_lines = []
+        with open("contacts.txt") as fil:
+            for f in fil.readlines():
+                if name not in f:
+                    new_lines.append(f)
+            add = f"name: {name}, phone number: {new_number}"
+            new_lines.append(add)
+            with open("contacts.txt", "w") as file:
+                file.writelines(new_lines)
+
+    except Exception as fild:
+        print(fild)
